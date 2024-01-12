@@ -1,0 +1,79 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    /*Till here everyting is brought to center */
+    /*now make itt top to bottom*/
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+/*Target the h1,h2, canvas and the p*/
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    text-shadow: 0 0 5px black;
+}
+h2{
+    color: red;
+    text-align: center;
+    display: none;
+    font-size: 30px;
+}
+
+canvas{
+    background: url(./image/mountain.avif);
+    
+    background-position: center;
+    background-size: cover;
+    display: block;
+    box-shadow: 0 0 10px rgb(202, 170, 170);
+}
+
+.scoreout{ /*U need to place it in top right corner*/
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin: 10px;
+    width: 100px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(202, 170, 170);
+    text-align: center;
+    font-size: 20px;
+} 
+@media screen and  (min-width:680px) and (max-width: 870px) {
+    canvas{
+        width: 600px;
+        height: 450px; 
+    }
+    h2{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width:0px) and (max-width: 680px) {
+    canvas{
+        width: 450px;
+        height: 450px; 
+    }
+    h2{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .scoreout{
+        width: 50px;
+    }
+}
+
