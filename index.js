@@ -45,7 +45,7 @@ function animate(){
             context.fillStyle = 'rgb(' + n * 16 + ',' + n * 16 + ',' + n * 16 + ')';
             context.fillRect(box.x,600 - box.y + cameraY,box.width,height);// cameraY is used for moving the box to move down as we play the game
         }
-        context.fillStyle = 'black';
+        context.fillStyle = 'yellow';
         context.fillRect(debris.x,600 - debris.y + cameraY,debris.width,height); //   create the debris 
 
         if(mode == 'bounce'){
