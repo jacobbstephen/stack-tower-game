@@ -52,7 +52,7 @@ canvas{
 @media screen and  (min-width:680px) and (max-width: 870px) {
     canvas{
         width: 600px;
-        height: 450px; 
+        height: 550px; 
     }
     h2{
         font-size: 30px;
